@@ -9,5 +9,5 @@ public class TenderManageSystemApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(TenderManageSystemApplication.class, args);
 	}
-//gpmuthu
+//dinesh
 }
