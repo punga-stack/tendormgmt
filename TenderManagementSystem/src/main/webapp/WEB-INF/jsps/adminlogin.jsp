@@ -43,6 +43,7 @@ color: red;
                                 <f:option value="User">User</f:option>
                                 </f:select>
                 </td>
+                <td><a href="signup">New User? SignUp</a></td>
                 </tr>
                 <tr><td><br></td></tr>
                 <tr>
@@ -65,7 +66,7 @@ color: red;
         div {
             text-align: center;
             margin: 30px;
-            width: 500px; height: 250px;
+            width: 500px; height: 330px;
             background: rgba(255, 255, 255, 0.7) 
 
             }

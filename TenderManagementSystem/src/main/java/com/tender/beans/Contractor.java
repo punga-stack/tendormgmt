@@ -1,6 +1,8 @@
 package com.tender.beans;
 
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 import javax.validation.constraints.NotEmpty;
@@ -10,6 +12,7 @@ import javax.validation.constraints.NotEmpty;
 public class Contractor {
 	
 	@Id
+	@GeneratedValue(strategy=GenerationType.AUTO)
 	private Integer conId;
 	@NotEmpty(message="Name is mandatory")
 	private String conName;

@@ -5,7 +5,7 @@
 <head>
 <meta charset="ISO-8859-1">
 <title>Insert title here</title>
-<link href="bootstrap.min.css" rel="stylesheet"/> 
+<link href="bootstrap.min.css" rel="stylesheet" />
 <style type="text/css">
 .er {
 	color: red;
@@ -25,74 +25,66 @@
 						<tr>
 							<td><br></td>
 						</tr>
-						<tr>
-							<td class="al"><label>Id :</label></td>
-							<td><f:input path="conId" /> <f:errors path="conId"
-									class="er" /></td>
-						</tr>
-						<tr>
-							<td><br></td>
-						</tr>
-						<tr>
-							<td><label class="al">Name:</label></td>
-							<td><f:input path="conName" /> <f:errors path="conName"
-									class="er" /></td>
-						</tr>
-						<tr>
-							<td><br></td>
-						</tr>
-						<tr>
-							<td><label class="al">Company Name:</label></td>
-							<td><f:input path="companyName" /> <f:errors
-									path="companyName" class="er" /></td>
-						</tr>
-						<tr>
-							<td><br></td>
-						</tr>
-						<tr>
-							<td><label class="al">Address:</label></td>
-							<td><f:input path="address" /> <f:errors path="address"
-									class="er" /></td>
-						</tr>
-						<tr>
-							<td><br></td>
-						</tr>
-						<tr>
-							<td><label class="al">Phone No:</label></td>
-							<td><f:input path="conPhoneno" /> <f:errors
-									path="conPhoneno" class="er" /></td>
-						</tr>
-						<tr>
-							<td><br></td>
-						</tr>
-						<tr>
-							<td><label class="al">Email:</label></td>
-							<td><f:input path="conEmail" /> <f:errors path="conEmail"
-									class="er" /></td>
-						</tr>
-						<tr>
-							<td><br></td>
-						</tr>
-						<tr>
-							<td><label class="al">Username:</label></td>
-							<td><f:input path="conUsername" /> <f:errors
-									path="conUsername" class="er" /></td>
-						</tr>
-						<tr>
-							<td><br></td>
-						</tr>
-						<tr>
-							<td><label class="al">Password:</label></td>
-							<td><f:input type="password" path="conPassword" /> <f:errors
-									path="conPassword" class="er" /></td>
-						</tr>
-						<tr>
-							<td><br></td>
-						</tr>
-						<tr>
-							<td><button type="submit" class="btn btn-primary">Register</button></td>
-							<td><button type="reset" class="btn btn-primary">Reset</button></td>
-						</tr>
+					<tr>
+						<td><label class="al">Name:</label></td>
+						<td><f:input path="conName" /> <f:errors path="conName"
+								class="er" /></td>
+					</tr>
+					<tr>
+						<td><br></td>
+					</tr>
+					<tr>
+						<td><label class="al">Company Name:</label></td>
+						<td><f:input path="companyName" /> <f:errors
+								path="companyName" class="er" /></td>
+					</tr>
+					<tr>
+						<td><br></td>
+					</tr>
+					<tr>
+						<td><label class="al">Address:</label></td>
+						<td><f:input path="address" /> <f:errors path="address"
+								class="er" /></td>
+					</tr>
+					<tr>
+						<td><br></td>
+					</tr>
+					<tr>
+						<td><label class="al">Phone No:</label></td>
+						<td><f:input path="conPhoneno" /> <f:errors
+								path="conPhoneno" class="er" /></td>
+					</tr>
+					<tr>
+						<td><br></td>
+					</tr>
+					<tr>
+						<td><label class="al">Email:</label></td>
+						<td><f:input path="conEmail" /> <f:errors path="conEmail"
+								class="er" /></td>
+					</tr>
+					<tr>
+						<td><br></td>
+					</tr>
+					<tr>
+						<td><label class="al">Username:</label></td>
+						<td><f:input path="conUsername" /> <f:errors
+								path="conUsername" class="er" /></td>
+					</tr>
+					<tr>
+						<td><br></td>
+					</tr>
+					<tr>
+						<td><label class="al">Password:</label></td>
+						<td><f:input type="password" path="conPassword" /> <f:errors
+								path="conPassword" class="er" /></td>
+					</tr>
+					<tr>
+						<td><br></td>
+					</tr>
+					<tr>
+						<td><button type="submit" class="btn btn-primary">Register</button></td>
+						<td><button type="reset" class="btn btn-primary">Reset</button></td>
+					</tr>
 					</center>
 				</table>
 			</div>

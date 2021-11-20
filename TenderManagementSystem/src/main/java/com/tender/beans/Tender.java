@@ -3,6 +3,8 @@ package com.tender.beans;
 import java.util.Date;
 
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 import javax.validation.constraints.NotEmpty;
@@ -15,6 +17,7 @@ import org.springframework.format.annotation.DateTimeFormat;
 public class Tender {
 	
 	@Id
+	@GeneratedValue(strategy=GenerationType.AUTO)
 	private Integer tenderId;
 	@NotEmpty(message="Enter Name")
 	private String tenderName;

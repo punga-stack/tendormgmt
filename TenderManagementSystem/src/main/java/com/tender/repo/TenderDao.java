@@ -10,5 +10,8 @@ import com.tender.beans.Tender;
 
 public interface TenderDao extends JpaRepository<Tender,Integer>{
 	
+	public Tender findByTenderId(Integer tenderId);
+	
+	public List<Tender> findByConId(Integer conId);
 
 }

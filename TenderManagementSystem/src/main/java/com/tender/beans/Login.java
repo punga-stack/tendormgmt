@@ -7,7 +7,7 @@ import javax.persistence.Id;
 import javax.validation.constraints.NotEmpty;
 
 @Entity
-public class AdminLogin {
+public class Login {
 	
 	@Id
 	@GeneratedValue(strategy=GenerationType.AUTO)
@@ -19,7 +19,7 @@ public class AdminLogin {
 	@NotEmpty(message = "Must select the details")
 	private String loginAs;
 	
-	public AdminLogin() {
+	public Login() {
 		// TODO Auto-generated constructor stub
 	}
 
@@ -55,7 +55,7 @@ public class AdminLogin {
 		this.loginAs = loginAs;
 	}
 
-	public AdminLogin(Integer loginId, @NotEmpty(message = "Enter Valid username") String username,
+	public Login(Integer loginId, @NotEmpty(message = "Enter Valid username") String username,
 			@NotEmpty(message = "Enter Valid  password") String password,
 			@NotEmpty(message = "Must select the details") String loginAs) {
 		super();

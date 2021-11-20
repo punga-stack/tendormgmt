@@ -8,4 +8,8 @@ import com.tender.exceptions.TenderNotFoundException;
 public interface TenderService {
 	
 	public List<Tender> getAlltenders() throws TenderNotFoundException;
+	
+	public Tender findByTenderId(Integer tenderId);
+	
+	public List<Tender> findByConId(Integer conId);
 }

@@ -22,6 +22,18 @@ public class TenderServiceImpl implements TenderService {
 		
 	}
 
+	@Override
+	public Tender findByTenderId(Integer tenderId) {
+		// TODO Auto-generated method stub
+		return tenDao.findByTenderId(tenderId);
+	}
+
+	@Override
+	public List<Tender> findByConId(Integer conId) {
+		// TODO Auto-generated method stub
+		return tenDao.findByConId(conId);
+	}
+
 	
 	
 	

@@ -4,7 +4,6 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Insert title here</title>
 <link href="bootstrap.min.css" rel="stylesheet" />
 <style type="text/css">
 .er {
@@ -14,9 +13,10 @@
 </head>
 <body>
 	<%@taglib prefix="f" uri="http://www.springframework.org/tags/form"%>
-	<h2 align="center">Tender Registration Screen</h2>
+	<h2 align="center">Register Tender Screen</h2>
 
-	<f:form action="registerTender" method="post" modelAttribute="tenData">
+	<f:form action="registerTenderData" method="post"
+		modelAttribute="tenderUserData">
 		<center>
 			<div>
 				<table style="margin-left: auto; margin-right: auto;">
@@ -25,17 +25,15 @@
 							<td><br></td>
 						</tr>
 						<tr>
-							<td><label class="al">Tender Name:</label></td>
-							<td><f:input path="tenderName" /> <f:errors
-									path="tenderName" class="er" /></td>
+							<td class="al"><label>Tender Id :</label></td>
+							<td><f:input path="tenderId" readonly="true" /></td>
 						</tr>
 						<tr>
 							<td><br></td>
 						</tr>
 						<tr>
-							<td><label class="al">Tender Desc:</label></td>
-							<td><f:input path="tenderDesc" /> <f:errors
-									path="tenderDesc" class="er" /></td>
+							<td><label class="al">Tender Name:</label></td>
+							<td><f:input path="tenderName" readonly="true" /></td>
 						</tr>
 						<tr>
 							<td><br></td>
@@ -49,25 +47,33 @@
 						</tr>
 						<tr>
 							<td><label class="al">Contractor UserName:</label></td>
-							<td><f:input path="conName" readonly="true" /> </td>
+							<td><f:input path="conName" readonly="true" /></td>
 						</tr>
 						<tr>
 							<td><br></td>
 						</tr>
 						<tr>
-							<td><label class="al">BasePrice:</label></td>
-							<td><f:input path="basePrice" /> <f:errors path="basePrice"
-									class="er" /></td>
+							<td><label class="al">Your UserId:</label></td>
+							<td><f:input path="userId" readonly="true" /></td>
 						</tr>
 						<tr>
 							<td><br></td>
 						</tr>
 						<tr>
-							<td><label class="al">Deadline:</label></td>
-							<td><f:input type="date" path="deadline" /> <f:errors
-									path="deadline" class="er" /></td>
+							<td><label class="al">Your UserName:</label></td>
+							<td><f:input path="userName" readonly="true" /></td>
 						</tr>
-						<td><br></td>
+						<tr>
+							<td><br></td>
+						</tr>
+						<tr>
+							<td><label class="al">BidPrice:</label></td>
+							<td><f:input path="bidPrice" type="number" min="${bidPrice }"/>
+								</td>
+						</tr>
+						<tr>
+							<td><br></td>
+						</tr>
 						<tr>
 							<td><button type="submit" class="btn btn-primary">Register</button></td>
 							<td><button type="reset" class="btn btn-primary">Reset</button></td>
